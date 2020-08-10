@@ -1,0 +1,37 @@
+@media (max-width: 1200px){
+    .promo {
+        background-position-x: 13%;
+        min-height: 100%;
+        padding: 15px 20px 40px 20px;
+        &__wrapper {
+            margin-top: 30px;
+        }
+        &__header {
+            font-size: 38px;
+        }
+        &__subheader {
+            font-size: 18px;
+        }
+    }
+} 
+@media (max-width: 991px){
+    .promo {
+       
+        background-position-x: 10%;
+        min-height: 100%;
+        padding: 15px 20px 40px 20px;
+        &__wrapper {
+            margin-top: 30px;
+        }
+        &__header {
+            font-size: 30px;
+        }
+        &__subheader {
+            font-size: 18px;
+        }
+        &__icons{
+            width: 50%;
+        }
+    }
+} 
+
