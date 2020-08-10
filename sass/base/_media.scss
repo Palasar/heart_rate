@@ -1,6 +1,6 @@
 @media (max-width: 1200px){
     .promo {
-        background-position-x: 13%;
+        background-position-x: 25%;
         min-height: 100%;
         padding: 15px 20px 40px 20px;
         &__wrapper {
@@ -17,21 +17,78 @@
 @media (max-width: 991px){
     .promo {
        
-        background-position-x: 10%;
+        background-position-x: 29%;
         min-height: 100%;
         padding: 15px 20px 40px 20px;
         &__wrapper {
-            margin-top: 30px;
+            margin-top: 10px;
         }
         &__header {
             font-size: 30px;
         }
         &__subheader {
-            font-size: 18px;
+            font-size: 16px;
+            margin-top: 0;
         }
         &__icons{
-            width: 50%;
+            width: 42%;
+            margin-top: 120px;
         }
     }
 } 
+@media (max-width: 767px){
+    .header{
+        &__logo {
+            width: 30%;
+        }
+        &__official {
+            font-size: 11px;
+                span {
+                    font-size: 16px;
+                }
+        }
+        &__phone {
+            font-size: 16px;
+        }
+    }
+    .button {
+        font-size: 11px;
+        width: 125px;
+        height: 25px;
+        &_main {
+            width: 180px;
+            height: 35px;
+            font-size: 12px;
+        }
+    }
+    
+    .promo {
+        &__wrapper {
+            align-items: center;
+        }
+        &__header {
+            margin-top: 25px;
+        }
+        &__icons {
+            margin-top: 60px;
+            width: 70%;
+        }
+        &__link {
+            font-size: 11px;
+        }
+    }
+    .privilege {
+        &__wrapper{
+            flex-direction: column;
+            margin: 29px auto 0 auto;
+            align-items: center;
+        }
+        &__items {
+            width: 90%;
+            margin-top: 35px;
+        }
+    }
+}
+@media (max-width: 575px){
 
+}
