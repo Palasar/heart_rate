@@ -1,13 +1,9 @@
 .privilege {
-    min-width: h 470px;
+    max-width:  100%;
     padding: 70px 0 78px 0;
     background-color: #f6f6f6;
-    &__title {
-        text-align: center;
-        color: #0d0d0d;
-        font-size: 30px;
-        font-weight: 700;
-    }
+    margin: 0 auto;
+
     &__wrapper {
         width: 97%;
         margin: 56px auto 0 auto;

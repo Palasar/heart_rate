@@ -11,8 +11,24 @@
     margin: 0 auto; 
 }
 
+.title {
+    text-align: center;
+    color: #0d0d0d;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    &_left {
+        color: #ffffff;
+        font-size: 36px;
+        font-weight: 700;
+        text-align: left;
+    }
+}
+
 @import 'bloks/promo';
 @import 'bloks/header';
 @import 'bloks/buttons';
 @import 'bloks/privilege';
+@import 'bloks/consultation';
+@import 'bloks/forms';
 @import 'base/media';
