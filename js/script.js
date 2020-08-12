@@ -39,5 +39,67 @@ $(document).ready(function(){
 
     toggleSlide('.catalog-item__link');
     toggleSlide('.catalog-item__back');
+    //modal
+    $('[data-modal=consultation]').on('click', function () {
+        $('.overlay, #consultation').fadeIn();
+    });
+
+    $('.modal__close').on('click', function () {
+        $('.overlay, #consultation, #order_done, #order').fadeOut('slow');
+    });
+
+    $(".button_mini").each(function(i){
+        $(this).on('click', function (){
+            $('#order .modal__desc').text($('.catalog-item__subtitle').eq(i).text());
+            $('.overlay, #order').fadeIn();
+        });
+    });
+    // $(".consultation-form").validate(); 
+    // $("#consultation form").validate({
+    //     rules: {
+    //         name: 'required',
+    //         phone: 'required',
+    //         email: {
+    //             required: true,
+    //             email: true
+    //         }
+    //     },
+    //     messages: {
+    //         name: "твое имя",
+    //         phone: "твой номер телефона",
+    //         email: {
+    //           required: "твой электронный адрес",
+    //           email: "некоректный адрес почты"
+    //         }
+    //       }
+    // }); 
+    // $("#order form").validate(); 
+
+    function validateForms(form){
+        $(form).validate({
+            rules: {
+                name: 'required',
+                phone: 'required',
+                email: {
+                    required: true,
+                    email: true
+                }
+            },
+            messages: {
+                name: "твое имя",
+                phone: "твой номер телефона",
+                email: {
+                  required: "твой электронный адрес",
+                  email: "некоректный адрес почты"
+                }
+              }
+        }); 
+    }
+
+    validateForms(".feed-form_mt25");
+    validateForms("#consultation-form");
+    validateForms("#order form");
+
+    $('input[name=phone]').mask("+38  (999) 999-99-99");
   });
   

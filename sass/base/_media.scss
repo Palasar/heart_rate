@@ -342,9 +342,31 @@
         &__phone {
             font-size: 16px;
         }
-       
-
+            &__info {
+                width: 320px;
+                height: 270px;
+                padding: 50px 40px 60px 40px;
+            }
+        }
+    .modal {
+        width: 320px;
+        &__close {
+            right: 5px;
+        }
     }
+    .feed-form {
+        &_mt25 {
+            width: 230px;
+            input {
+                height: 40px;
+            }
+        }
+    }
+    .feed-form .button_submit {
+        height: 40px;
+        font-size: 14px;
+    }
+        
 
     
 }
