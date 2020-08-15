@@ -157,11 +157,16 @@
                     left: -14px;
                     top: 7px;
                 }
+                &:last-child{
+                    &::before {
+                        display: none;
+                    }
+                }
             }
         }
         &__back {
             position: absolute;
-            bottom: 0;
+            bottom: -70px;
             left: 50%;
             transform: translateX(calc(-50% - 19px));
             display: block;
